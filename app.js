@@ -17,7 +17,8 @@ app.set("view engine", "ejs");
 app.use( express.static(__dirname+"/public"));
 app.use(methodeOverride("_method"));
 app.use(flash());
-mongoose.connect("mongodb://localhost/yelp_db");
+// mongoose.connect("mongodb://localhost/yelp_db");
+mongoose.connect("mongodb://ali:ali@ds129723.mlab.com:29723/yelpalimar");
 
 //seedDB(); seeds the database
 //passport configuration 
